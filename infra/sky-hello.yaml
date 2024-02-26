@@ -1,0 +1,15 @@
+resources:
+  cloud: aws
+
+workdir: .
+
+setup: |
+  echo "***set up"
+
+run: |
+  echo "***set up"
+
+  uname -a
+  echo ""
+  echo "Hello from sky."
+  echo ""
