@@ -7,7 +7,7 @@ setup: |
   echo "***set up"
 
 run: |
-  echo "***set up"
+  echo "***run "
 
   uname -a
   echo ""
