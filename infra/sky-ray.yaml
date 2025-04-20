@@ -1,0 +1,25 @@
+resources:
+  cloud: aws
+
+workdir: .
+
+setup: |
+  echo "***set up"
+  echo ""
+  echo Invoke main.py and check ray dependencies
+  echo ""
+  uv venv
+  source .venv/bin/activate
+  uv sync
+
+run: |
+  echo "***run"
+
+  uname -a
+
+  echo ""
+  echo Check uv
+  echo ""
+  which uv
+
+  uv run main.py
